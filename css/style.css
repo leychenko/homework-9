@@ -1,0 +1,226 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:regular,700,900&display=swap);
+
+.wrapper {
+	overflow: hidden;
+	min-height: 100%;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+ }
+ .wrapper > main {
+	flex-grow: 1;
+ }
+ 
+ [class*="__container"] {
+	max-width: 1260px;
+	margin: 0 auto;
+	padding: 0 15px;
+ }
+body{
+	font-family: "Lato";
+	font-weight: 400;
+	font-size: normal;
+	font-size: 18px;
+	color: #fff;
+}
+.header { 
+	background-color:rgba(0, 0, 0, 0.875);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+}
+.header__container { 
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.header__logo img{
+	width: 75%;
+}
+.menu__body { 
+	padding-left: 10px;
+}
+.menu__list { 
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: 45px;
+	row-gap: 10px;
+}
+.menu__item { }
+.menu__link { 
+	color: rgba(255, 255, 255, 0.842);
+}
+.menu__link:hover{
+	text-decoration: underline;
+}
+
+.page-main { 
+	height: 100vh;
+	background: url(../img/fon-abstraktnyi-dizain-geometricheskii-linii-background-fon.jpg)center / cover no-repeat;
+}
+.page-main__container{
+	padding-top: 250px;
+	display: flex;
+	justify-content: space-between;
+}
+.page-main__content { 
+	flex: 0 1 50%;
+	display: flex;
+	flex-direction: column;
+	row-gap: 45px;
+}
+.page-main__picture{
+	max-width: 350px;
+}
+.page-main__logo{
+	position: relative;
+	padding-bottom: 34.502924%; /* 59/171 */
+
+}
+.page-main__logo img{ 
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.page-main__title { 
+	display: flex;
+	flex-direction: column;
+	row-gap: 25px;
+	font-size: 43px;
+	/* max-width: 500px; */
+}
+.page-main__title::after{
+	content: "";
+	display: block;
+	width: 85px;
+	height: 2px;
+	background-color: #fff;
+}
+.page-main__text { 
+	max-width: 500px;
+}
+.page-main__button { 
+	align-self: flex-start;
+	border: 2px solid white;
+	padding: 10px 30px;
+	font-weight: 700;
+	border-radius: 3px;
+	background-color: rgba(255, 255, 255, 0.17);
+	transition: background-color 0.3s ease 0s;
+}
+.page-main__button:hover{
+	background-color: rgba(255, 255, 255, 0.274);
+}
+.page-main__register{
+	align-self: flex-start;
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	row-gap: 40px;
+}
+.page-main__form{
+	color: black;
+	display: flex;
+	row-gap: 40px;
+	flex-direction: column;
+	padding: 15px 30px;
+}
+.page-main__form-title{
+	font-size: 25px;
+	font-weight: 700;
+}
+
+.page-main__form-title span{
+	color: orange;
+	text-transform: uppercase;
+}
+.form { 
+	display: flex;
+	flex-direction: column;
+	row-gap: 20px;
+}
+.form__input {
+	padding: 10px;
+	border-bottom:1px solid rgba(128, 128, 128, 0.381);
+ }
+ .form__input:focus{
+	outline:2px solid orange;
+ }
+ .form__input::placeholder{
+	color:rgba(128, 128, 128, 0.481) ;
+ }
+ .form__button{
+	background-color: orange;
+	padding: 15px;
+	transition: background-color 0.3s ease 0s;
+ }
+ .form__button:hover{
+	background-color: rgba(255, 166, 0, 0.81);
+ }
+
+
+
+
+ .footer {
+	color: black;
+}
+.footer::after{
+	content: "";
+	display: block;
+	width: 100%;
+	height: 2px;
+	background-color: rgba(128, 128, 128, 0.609);
+	margin-bottom: 20px;
+}
+.footer__container { 
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.social { 
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.social__info { 
+	flex: 0 1 50%;
+	display: flex;
+	flex-direction: column;
+	row-gap: 10px;
+	max-width: 500px;
+}
+.social__title { 
+	font-weight: 700;
+	font-size: 25px;
+}
+.social__text {
+	color: rgba(128, 128, 128, 0.87);
+}
+
+.footer__menu { 
+	flex: 0 1 50%;
+}
+.menu-footer { }
+.menu-footer__body {
+ }
+.menu-footer__list { 
+	display:flex;
+	justify-content: space-between;
+}
+.item-wifi { 
+	transform: rotate(45deg)
+}
+.menu-footer__link{
+	opacity: 0.4;
+	font-size: 35px;
+	transition: opacity 0.3s ease 0s;
+}
+.menu-footer__link:hover{
+	opacity: 0.6;
+}
